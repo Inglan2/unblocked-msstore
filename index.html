@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unblocked-MSStore</title>
-</head>
+    <style>
+      body,
+      html {
+        padding: 0;
+        margin: 0;
+        background-color: black;
+      }
 
-<body>
-    <ms-store-badge productid="9nblggh4r2r6" productname="Minecraft Education" window-mode="direct" theme="dark"
-        language="en-au" animation="on">
-    </ms-store-badge>
+      ms-store-badge {
+        zoom: 0.5;
+      }
 
-</body>
+      .app {
+        background-color: #111;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        font-family: monospace;
+        font-size: large;
+        width: 250px;
+        flex-grow: 1;
+      }
 
+      body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="app">
+      Minecraft Education
+      <ms-store-badge
+        productid="9nblggh4r2r6"
+        productname="Minecraft Education"
+        window-mode="direct"
+        theme="dark"
+        language="en-au"
+        animation="on"
+      >
+      </ms-store-badge>
+    </div>
+
+    <script
+      type="module"
+      src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"
+    ></script>
+  </body>
 </html>
